@@ -1,0 +1,20 @@
+{
+  "name": "VAMEZeal App",
+  "short_name": "iAM",
+  "start_url": "https://vamezeal.com.ng",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "description": "iAm Marketing app.",
+  "icons": [
+    {
+      "src": "https://vamezeal.com.ng/images/vamezeallogo.png",
+      "sizes": "48x48",
+      "type": "image/png"
+    },
+    {
+      "src": "https://vamezeal.com.ng/images/preview-logo",
+      "sizes": "72x72",
+      "type": "image/png"
+    }
+  ]
+}
