@@ -1,4 +1,0 @@
-Vamezeal Ads Embed type = <iframe src="https://stories.nws.ai/1288519303/vamezeal-iam-marketing/?opts=fb:1" frameborder="0" scrolling="no" style="width:300px;height:600px;position:relative;margin:0 auto;display:block;"></iframe>
-
-
-Vamezeal Ads URL = https://stories.nws.ai/1288519303/vamezeal-iam-marketing/
