@@ -159,14 +159,14 @@
       width: auto;
       height: auto;
       float: right;
-      font-size: 13px;
+      font-size: 16px;
       font-family: "fadings", "Poppins", "Comfortaa", sans-serif;
       font-weight: 300;
     }
 
     a.seeing:link {
       text-decoration: none;
-      font-size: 13px;
+      font-size: 18px;
       font-family: "fadings", "Poppins", "Comfortaa", sans-serif;
       font-weight: 300;
       border-radius: 20px;
@@ -186,6 +186,8 @@
       margin-left: 2px;
       margin-right: 2px;
       color: rgb(0, 0, 0);
+      font-size: 16px;
+      font-family: "fadings", "Poppins", "Comfortaa", sans-serif;
       background-color: rgba(255, 255, 255, 0.233);
       border-radius: 20px;
     }
@@ -200,7 +202,7 @@
       width: auto;
       float: right;
       border-radius: 50px;
-      font-size: 16px;
+      font-size: 18px;
       font-family: "fadings", "Poppins", "Comfortaa", sans-serif;
       font-weight: 300;
     }
@@ -275,35 +277,6 @@
       text-decoration: none;
     }
 
-    #myInput {
-      width: 200px;
-      /* Full-width */
-      height: initial;
-      text-align: center;
-      font-family: "Poppins";
-      font-weight: 300;
-      font-size: 14px;
-      /* Increase font-size */
-      padding-top: 1px;
-      padding-bottom: 1px;
-      padding-left: 1px;
-      padding-right: 1px;
-      /* Add some padding */
-      border-radius: 20px;
-      margin-top: 1px;
-      margin-bottom: 1px;
-      /* Add some space below the input */
-      margin-left: 1px;
-      margin-right: 1px;
-      border-color: white;
-      border-style: none;
-      background-color: black;
-      color: white;
-      background-repeat: no-repeat;
-      background-size: cover;
-      position: relative;
-    }
-
     h2#koi {
       background-color: #0a0a0a;
       color: whitesmoke;
@@ -317,6 +290,7 @@
     }
 
     #myBtnContainer {
+      background-image: url("vamezeal-iam-brand-images/bgnavbuttons.png");
       background-repeat: no-repeat;
       background-size: contain;
       position: relative;
@@ -331,51 +305,39 @@
       border-radius: 5px;
     }
 
-    #middle1 {
-      background-color: black;
+    #active-terms {
+      color: rgb(253, 228, 0);
+      background-color: #181818;
+      width: initial;
+      height: initial;
       text-align: center;
-      padding-top: 0.5px;
-      padding-bottom: 0.5px;
-      margin-top: 1px;
-      margin-bottom: 1px;
-      margin-left: 1px;
-      margin-right: 1px;
-      border-radius: 5px;
-    }
-
-    #middle2 {
-      background-color: black;
-      text-align: center;
-      padding-top: 0.5px;
-      padding-bottom: 0.5px;
-      margin-top: 1px;
-      margin-bottom: 1px;
-      margin-left: 1px;
-      margin-right: 1px;
-      border-radius: 5px;
-    }
-
-    #container1 {
-      overflow: hidden;
-      text-align: center;
-      background-color: #0a0a0a;
-      border-radius: 5px;
-      align-content: center;
       align-self: center;
-      align-items: center;
-      display: flexbox;
-      padding-left: 0%;
-      padding-right: 0%;
-      margin-top: 3px;
+      font-family: "fadings", "Poppins", "Comfortaa", sans-serif;
+      font-feature-settings: "fina";
+      font-weight: 300;
+      font-size: 20px;
+      padding-left: 1.5%;
+      padding-right: 1.5%;
+      border-radius: 5px;
+      display: inline;
+    }
+
+    #middle {
+      background-color: black;
+      text-align: center;
+      padding-top: 0.5px;
+      padding-bottom: 0.5px;
+      margin-top: 1px;
       margin-bottom: 1px;
       margin-left: 1px;
       margin-right: 1px;
+      border-radius: 5px;
     }
 
     #container2 {
       overflow: hidden;
       text-align: center;
-      background-color: #0a0a0a;
+      background-color: #030100;
       border-radius: 5px;
       align-content: center;
       align-self: center;
@@ -390,184 +352,142 @@
     }
 
     .filterDiv {
-      background-color: #030100;
-      background-image: url("vamezeal-iam-brand-images/websitebgV2.webp");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      color: black;
-      width: initial;
-      height: initial;
-      text-align: center;
-      padding-top: 0.5%;
-      padding-bottom: 0.5%;
-      padding-left: 0.5%;
-      padding-right: 0.5%;
-      margin-top: 1px;
-      margin-bottom: 1px;
-      margin-left: 2px;
-      margin-right: 2px;
-      border-radius: 5px;
-      /* Hidden by default */
-    }
-
-    #iAm-brand-banner {
-      background-image: url("vamezeal-iam-brand-images/websitebgV2.webp");
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-position: center;
-      /* Responsive font size */
+      animation: myfirst 1.5s 1;
+      animation-direction: alternate;
       background-color: #0a0a0a;
       width: initial;
-      height: initial;
+      height: auto;
+      line-height: 30px;
       text-align: center;
+      align-self: center;
+      font-family: "Poppins";
+      font-feature-settings: "fina";
+      font-weight: 300;
+      font-size: 16px;
       padding-top: 0.5%;
       padding-bottom: 0.5%;
       padding-left: 0.5%;
       padding-right: 0.5%;
-      margin-top: 2px;
-      margin-bottom: 1px;
+      margin-top: 3.2px;
+      margin-bottom: 3.2px;
       margin-left: 2px;
       margin-right: 2px;
       border-radius: 5px;
-    }
-
-    #seven {
-      width: initial;
-      height: initial;
-      text-align: center;
-      align-self: center;
-      padding-top: 2%;
-      padding-bottom: 18%;
-      padding-left: 0.5%;
-      padding-right: 0.5%;
-      margin-top: 5px;
-      margin-bottom: 5px;
-      margin-left: 2px;
-      margin-right: 2px;
-      border-radius: 5px;
-      background-image: url("vamezeal-iam-brand-images/rashopbrand-1.webp");
-      background-repeat: no-repeat;
-      background-size: 100%;
-      background-position: center;
     }
 
     .insidewes {
       background-color: rgba(245, 245, 245, 0.032);
       padding-top: 20px;
-      padding-bottom: 20px;
+      padding-bottom: 1px;
       margin-left: 1px;
       margin-right: 1px;
       border-radius: 10px;
+      text-align: center;
     }
 
     .wes1 {
+      animation: active-wes1 0.5s;
+      animation-direction: reverse;
+      animation-duration: 3s;
       text-align: center;
-      font-size: 22px;
+      font-size: 19px;
       font-family: "Poppins", sans-serif;
       font-weight: 300;
-      color: rgb(21, 255, 0, 0.972);
+      color: rgb(253, 228, 0);
       padding-top: 20px;
       padding-bottom: 20px;
       margin-left: 1px;
       margin-right: 1px;
       text-decoration: none;
       font-feature-settings: "fina";
-      font-style: initial;
     }
 
     .wes2 {
       text-align: center;
-      font-size: 25px;
+      font-size: 18px;
       font-family: "Poppins", sans-serif;
       font-weight: 300;
-      color: rgb(21, 255, 0, 0.972);
+      color: rgb(253, 228, 0);
       margin-top: 20px;
       margin-bottom: 20px;
       margin-left: 1px;
       margin-right: 1px;
       font-feature-settings: "fina";
       display: grid;
-      font-style: initial;
     }
 
-    .names {
-      text-align: center;
+    .vamezeal-p-policy {
+      text-align: initial;
       font-size: 16px;
       font-family: "Poppins", sans-serif;
-      font-weight: 200;
-      color: rgb(255, 211, 154);
-      margin-top: 1px;
-      margin-bottom: 0px;
+      font-weight: 300;
+      background-color: #0f0f0f;
+      color: rgba(245, 245, 245, 0.972);
+      padding: 5px;
+      margin-top: 14px;
+      margin-bottom: 5px;
       margin-left: 5px;
-      margin-right: 10px;
+      margin-right: 5px;
       float: left;
       font-feature-settings: "fina";
+      display: flex;
     }
 
-    .adr-mtup {
+    .vp-now {
+      text-align: initial;
+      font-size: 16px;
+      font-family: "Poppins", sans-serif;
+      font-weight: 300;
+      color: rgb(253, 228, 0);
+      padding-left: 0px;
+      padding-right: 0px;
+      margin-top: 10px;
+      margin-bottom: 0px;
+      margin-left: 2px;
+      margin-right: 2px;
+      font-feature-settings: "fina";
+      text-align: center;
+    }
+
+    .all-ci-links {
+      background-color: white;
+      padding-top: 1px;
+      padding-bottom: 3px;
+      margin-top: 3%;
+    }
+
+    .vamezeal-affiliated-comp {
+      text-align: left;
+      font-size: 15px;
+      font-family: "Poppins", sans-serif;
+      font-weight: 300;
+      color: whitesmoke;
+      padding-top: 2px;
+      padding-left: 2px;
+      padding-right: 5%;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      margin-left: 3px;
+      margin-right: 3px;
+      font-feature-settings: "fina";
+      float: left;
+    }
+
+    .vacomp-link {
+      margin-left: 10px;
+      text-decoration: underline;
+      color: rgb(253, 228, 0);
+    }
+
+    .namesa {
       text-align: center;
       font-size: 16px;
-      color: rgb(21, 255, 0, 0.972);
+      color: green;
       text-decoration-line: underline;
-      text-decoration-color: rgb(21, 255, 0, 0.972);
+      text-decoration-line: underline;
+      text-decoration-color: green;
       font-family: "Poppins", sans-serif;
       font-weight: 300;
-      margin-left: 1px;
-      margin-right: 1px;
-      font-feature-settings: "fina";
-    }
-
-    .adr-mtupcomp {
-      text-align: center;
-      font-size: 16px;
-      font-family: "Poppins", sans-serif;
-      font-weight: 300;
-      color: rgb(21, 255, 0, 0.972);
-      margin-top: 1px;
-      margin-bottom: 0px;
-      margin-left: 5px;
-      margin-right: 10px;
-      float: left;
-      font-feature-settings: "fina";
-    }
-
-    .ptext {
-      color: whitesmoke;
-      text-align: justify;
-      font-size: 15px;
-      font-family: "Poppins", sans-serif;
-      font-weight: 300;
-      word-spacing: initial;
-      width: initial;
-      height: initial;
-      padding-top: 0px;
-      padding-bottom: 0px;
-      padding-left: 5px;
-      padding-right: 5px;
-      margin-top: 1px;
-      margin-bottom: 1px;
-      margin-left: 1px;
-      margin-right: 1px;
-      font-feature-settings: "fina";
-      font-style: initial;
-    }
-
-    .acomp {
-      color: whitesmoke;
-      text-align: justify;
-      font-size: 15px;
-      font-family: "Poppins";
-      font-weight: 200;
-      word-spacing: initial;
-      width: initial;
-      height: initial;
-      padding-top: 0px;
-      padding-bottom: 0px;
-      padding-left: 5px;
-      padding-right: 5px;
-      margin-top: 1px;
-      margin-bottom: 1px;
       margin-left: 1px;
       margin-right: 1px;
       font-feature-settings: "fina";
@@ -587,26 +507,7 @@
       padding-left: 5px;
       padding-right: 5px;
       margin-top: 1px;
-      margin-bottom: 5px;
-      margin-left: 1px;
-      margin-right: 1px;
-    }
-
-    .vsa-map {
-      color: yellow;
-      text-align: center;
-      font-size: 13px;
-      font-family: "Quicksand", "Poppins";
-      font-weight: 300;
-      word-spacing: initial;
-      width: initial;
-      height: initial;
-      padding-top: 0px;
-      padding-bottom: 0px;
-      padding-left: 5px;
-      padding-right: 5px;
-      margin-top: 1px;
-      margin-bottom: 5px;
+      margin-bottom: 1px;
       margin-left: 1px;
       margin-right: 1px;
     }
@@ -668,6 +569,27 @@
       color: rgb(21, 255, 0, 0.972);
     }
 
+    .ptext {
+      color: whitesmoke;
+      text-align: justify;
+      font-size: 15px;
+      font-family: "Poppins";
+      font-weight: 300;
+      word-spacing: initial;
+      width: initial;
+      height: initial;
+      padding-top: 0px;
+      padding-bottom: 0px;
+      padding-left: 5px;
+      padding-right: 5px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      margin-left: 1px;
+      margin-right: 1px;
+      font-feature-settings: "fina";
+      justify-content: safe;
+    }
+
     .show {
       display: block;
     }
@@ -679,7 +601,7 @@
       color: yellow;
       border-radius: 5px;
       font-family: "Poppings";
-      font-weight: 300;
+      font-weight: 400;
       font-size: 20px;
       align-content: center;
       align-self: center;
@@ -848,7 +770,6 @@
       text-align: center;
       color: white;
       font-size: 20px;
-      font-weight: 300;
       font-family: "Poppins";
       margin-left: 16px;
       margin-right: 16px;
@@ -858,7 +779,6 @@
       font-family: "Poppins";
       font-size: 11px;
       font-weight: 300;
-      font-family: "Poppins";
       text-align: center;
       color: rgb(253, 228, 0);
     }
@@ -867,7 +787,6 @@
       font-family: "Poppins";
       font-size: 11px;
       font-weight: 300;
-      font-family: "Poppins";
       text-align: center;
       color: white;
     }
@@ -876,7 +795,6 @@
       font-family: "Poppins";
       font-size: 11px;
       font-weight: 300;
-      font-family: "Poppins";
       text-align: center;
       color: rgb(253, 228, 0);
     }
@@ -913,7 +831,6 @@
       font-family: "Poppins";
       font-size: 12px;
       font-weight: 300;
-      font-family: "Poppins";
       text-align: center;
       margin-top: 10px;
       margin-bottom: 10px;
@@ -931,6 +848,7 @@
       color: whitesmoke;
     }
   </style>
+
   <script>
     // Set cookie
     function setCookie(name, value, days) {
@@ -970,83 +888,76 @@
   <!-- header -->
   <header>
     <div class="menu">
-      <a id="va-DL" title="Boon" href="https://ali.ski/6L6COh"><img id="Ads-M1" title=""
-          src="vamezeal-iam-brand-images/Ads-M2.png" alt="" width="35" height="35"></a>
-      <div class="logo"><img title="" src="vamezeal-iam-brand-images/rashls1-favicon.webp" alt="" width="51"
-          height="51">
+      <div class="logo"><img id="logo" title="logo"
+          src="vamezeal-iam-brand-images/rashoplogo.webp" alt="" width="40" height="40">
       </div>
       <div class="buttons" id="myButtons"><a class="seeing" id="marketer" href="https://gftm.io/boBU7x"
           title="products">Marketing</a>
-        <b class="seeing" id="about" href="#" title="rashop">About</b><a class="seeing" id="show"
-          href="https://rashop.com.ng/index" title="homepage">Show</a>
+        <a class="seeing" id="about" href="about.html" title="rashop">About</a><a class="seeing"
+          id="show" href="https://rashop.com.ng/index" title="homepage">Show</a>
       </div>
-    </div>
-    <br><br><a id="review-marketer-top-menu"
-      href="https://www.google.com/maps/place/SniffTegist,+NO+9+Duba+Road,+Malali+800283,+Kaduna/@10.5549676,7.4721882,16z/data=!4m6!3m5!1s0x11b2b543f8aa8df3:0xb4592fbd8c410820!8m2!3d10.5560381!4d7.4719829!16s%2Fg%2F11mr2cj43_"><Img
-        id="rate-us-top-menu" src="vamezeal-iam-brand-images/stars.png" alt="stars.png" width="61"
+    </div><br><br>
+    <a id="review-marketer-top-menu" title="review"
+      href="https://www.google.com/maps/place/SniffTegist,+NO+9+Duba+Road,+Malali+800283,+Kaduna/@10.5549676,7.4721882,16z/data=!4m6!3m5!1s0x11b2b543f8aa8df3:0xb4592fbd8c410820!8m2!3d10.5560381!4d7.4719829!16s%2Fg%2F11mr2cj43_">
+      <Img id="rate-us-top-menu" title="rate" src="vamezeal-iam-brand-images/stars.png" alt="" width="61"
         height="initial"></a><br>
   </header>
 
-  <!-- Control buttons -->
   <div id="myBtnContainer">
     <h2 id="koi">RashOp</h2>
+    <h1 id="active-terms" title="tac">Terms</h1>
   </div>
 
-  <!-- The filterable elements. Note that some have multiple class names (this is because they belong to multiple categories) -->
-  <div id="middle1">
-    <div class="insidewes"><b class="wes1">About RashOp</b></div><b class="wes2">Buyers Information</b>
-    <div id="container1">
-      <div class="filterDiv about">
-        <h5 class="ptext">RashOp is a global afiliate marketing site and the property of It's founder
-          (Alhaji Rabiu Shehu Binji). We are at our own
-          discretion and by 99% Independent Affiliate Marketing Professionals, for the companies world wide known and
-          trusted by
-          billions.<br>
-          We are not limited to marketing top grade materials, clothes, bodycare, perfumes, utensils, building
-          materials.
-          Etcetera. But also into real estate marketing. By displaying to you the products, materials, land and
-          properties. Etcetera<br>
-          We have consider irrelevance the referring and selling of Illegal materials; such as alcohol and pornograhy as
-          a
-          priority in our
-          website. And we will be extensively and visually reviewing our affiliated sites for moral considerations.</h5>
-      </div>
-      <ul id="iAm-brand-banner">
-        <li id="seven">
-        </li>
-      </ul>
-    </div>
-  </div>
-  <div id="middle2">
+  <div id="middle">
+    <div class="insidewes"><b class="wes1">The General Terms And Conditions.</b></div><b class="wes2">Affiliation
+      Statement And
+      Buyers Guide.</b>
     <div id="container2">
-      <div class="filterDiv address"><b class="adr-mtup">Our Address:</b>
-        <h5 class="vsa">RashOp; Shagon Malam Shehu, Zirin Gaza, Malali Village, Malali, Kaduna North, Kaduna State,
-          Nigeria</h5>
-        <h5 class="vsa-map">RashOp on google map</h5>
-      </div>
-      <div class="filterDiv ask"><b class="adr-mtup">Quickly Ask:</b><br>
-        <a class="csn" href="tel:+2348103722376">Call: +2348103722376</a><a class="qfs"
-          href="mailto:rashopworkers@gmail.com">Message</a><br>
-        <a id="review-marketer-bottom-menu"
-          href="https://www.google.com/maps/place/SniffTegist,+NO+9+Duba+Road,+Malali+800283,+Kaduna/@10.5549676,7.4721882,16z/data=!4m6!3m5!1s0x11b2b543f8aa8df3:0xb4592fbd8c410820!8m2!3d10.5560381!4d7.4719829!16s%2Fg%2F11mr2cj43_">
-          <img id="rate-us-bottom-menu" title="" src="vamezeal-iam-brand-images/stars.png" alt="stars.png"
-            width="initial" height="initial">
-        </a>
-      </div>
-    </div>
-  </div>
-  <section class="review-marketer">...<br>
-    <p id="snifftegistl" title="Web Developer"><a id="weblog" href="tel:+2348105903705"><img id="weblog"
-          title="snifftegist" src="vamezeal-iam-brand-images/snifftegistlogo.webp" alt="snifftegistlogo.webp" width="20"
-          height="20">Weblog
-        SniffTegist</a></p><br>
-  </section>
+      <div class="filterDiv">
+        <h5 class="vamezeal-p-policy">RashOp is an Independent Affiliate Marketing site for the companies listed below. We may and may
+          not sell 99% Of the items listed directly to buyers. But the companies recognizes and rendered our company, links and coupon codes. So that
+          you can have the best of experince, when purchasing their items through our hardworking website (RashOp).
+          <br>
+        </h5>
 
+        <div class="vp-now">Please visit the links below for their purchasing terms and conditions.</div>
+      </div>
+      <div class="all-ci-links">
+        <div class="vamezeal-affiliated-comp">AliExpress:<a class="vacomp-link"
+            href="https://best.aliexpress.com">https://best.aliexpress.com</a></div>
+        <div class="vamezeal-affiliated-comp">Admitad:<a class="vacomp-link"
+            href="https://admitad.com">https://admitad.com</a></div>
+        <div class="vamezeal-affiliated-comp">Walmart:<a class="vacomp-link"
+            href="https://walmart.com">https://walmart.com</a>
+        </div>
+        <div class="vamezeal-affiliated-comp">Ebay:<a class="vacomp-link" href="https://ebay.com">https://ebay.com</a>
+        </div>
+        <div class="vamezeal-affiliated-comp">Amazon:<a class="vacomp-link"
+            href="https://amazon.com">https://amazon.com</a></div>
+        <div class="vamezeal-affiliated-comp">Chicme:<a class="vacomp-link"
+            href="https://chicme.com">https://chicme.com</a>
+        </div>
+        <div class="vamezeal-affiliated-comp">Canon:<a class="vacomp-link"
+            href="https://canon.com">https://canon.com</a>
+        </div>
+        <div class="vamezeal-affiliated-comp">Banggog:<a class="vacomp-link"
+            href="https://banggog.com">https://banggog.com</a>
+        </div>
+        <div class="vamezeal-p-policy">NOTE: The above details, only presented to you the names or links of the businesses
+          we recognizes trusted by states regulations of the world. And that shoppers around the globe are feeling comfortable
+          purchasing from.<br><br>They have a lot to check and purchasing benefits. You will find interesting.
+        </div>
+      </div>
+    </div><br>
+    <p id="snifftegistl" title="Web Developer"><a id="weblog" href="tel:+2348105903705"><img id="weblog" title="snifftegist"
+      src="vamezeal-iam-brand-images/snifftegistlogo.webp" alt="snifftegistlogo.webp" width="20" height="20">Weblog
+    SniffTegist</a></p><br>
 
 </body>
+
 <footer>
   <nav>
-    <a id="tos" title="terms-and-conditions-rashop-ams" href="terms-and-conditions-rashop-ams.html">Terms And
+    <a id="tos" title="terms-and-conditions-rashop-ams" href="#">Terms And
       Conditions</a>
     <b id="license" title="MIT Certified">(c) 2024 RashOp</b>
     <a id="tac" title="privacy-policy-rashop-ams" href="privacy-policy-rashop-ams.html">Privacy
