@@ -9,7 +9,43 @@
 
 <url>
   <loc>https://rashop.com.ng/</loc>
-  <lastmod>2024-06-17T17:16:07+00:00</lastmod>
+  <lastmod>2024-10-20T23:44:42+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://rashop.com.ng/about</loc>
+  <lastmod>2024-10-20T23:44:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://rashop.com.ng/terms-and-conditions-rashop-ams</loc>
+  <lastmod>2024-10-20T23:44:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://rashop.com.ng/privacy-policy-rashop-ams</loc>
+  <lastmod>2024-10-20T23:44:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://rashop.com.ng/index</loc>
+  <lastmod>2024-10-20T23:44:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://rashop.com.ng/terms-and-conditions-rashop-ams.html</loc>
+  <lastmod>2024-10-20T23:44:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://rashop.com.ng/privacy-policy-rashop-ams.html</loc>
+  <lastmod>2024-10-20T23:44:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://rashop.com.ng/about.html</loc>
+  <lastmod>2024-10-20T23:44:42+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 
 
