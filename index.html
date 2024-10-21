@@ -224,8 +224,8 @@
         var c = c === void 0 ? 0 : c; a = Ta(a, b); if (a != null) if (b = typeof a, b === "number" ? Number.isFinite(a) : b !== "string" ? 0 : Ka.test(a)) if (typeof a === "number") { if (a = Math.trunc(a), !Number.isSafeInteger(a)) { Ga(a); b = M; var d = N; if (a = d & 2147483648) b = ~b + 1 >>> 0, d = ~d >>> 0, b == 0 && (d = d + 1 >>> 0); b = d * 4294967296 + (b >>> 0); a = a ? -b : b } } else if (b = Math.trunc(Number(a)), Number.isSafeInteger(b)) a = String(b); else {
           if (b = a.indexOf("."), b !== -1 && (a = a.substring(0, b)), !(a[0] === "-" ? a.length < 20 || a.length === 20 && Number(a.substring(0, 7)) > -922337 :
             a.length < 19 || a.length === 19 && Number(a.substring(0, 6)) < 922337)) {
-              if (a.length < 16) Ga(Number(a)); else if (E()) a = BigInt(a), M = Number(a & BigInt(4294967295)) >>> 0, N = Number(a >> BigInt(32) & BigInt(4294967295)); else { b = +(a[0] === "-"); N = M = 0; d = a.length; for (var e = b, f = (d - b) % 6 + b; f <= d; e = f, f += 6)e = Number(a.slice(e, f)), N *= 1E6, M = M * 1E6 + e, M >= 4294967296 && (N += Math.trunc(M / 4294967296), N >>>= 0, M >>>= 0); b && (b = n(Ha(M, N)), a = b.next().value, b = b.next().value, M = a, N = b) } a = M; b = N; b & 2147483648 ? E() ? a = "" + (BigInt(b | 0) << BigInt(32) | BigInt(a >>> 0)) : (b =
-                n(Ha(a, b)), a = b.next().value, b = b.next().value, a = "-" + Ia(a, b)) : a = Ia(a, b)
+            if (a.length < 16) Ga(Number(a)); else if (E()) a = BigInt(a), M = Number(a & BigInt(4294967295)) >>> 0, N = Number(a >> BigInt(32) & BigInt(4294967295)); else { b = +(a[0] === "-"); N = M = 0; d = a.length; for (var e = b, f = (d - b) % 6 + b; f <= d; e = f, f += 6)e = Number(a.slice(e, f)), N *= 1E6, M = M * 1E6 + e, M >= 4294967296 && (N += Math.trunc(M / 4294967296), N >>>= 0, M >>>= 0); b && (b = n(Ha(M, N)), a = b.next().value, b = b.next().value, M = a, N = b) } a = M; b = N; b & 2147483648 ? E() ? a = "" + (BigInt(b | 0) << BigInt(32) | BigInt(a >>> 0)) : (b =
+              n(Ha(a, b)), a = b.next().value, b = b.next().value, a = "-" + Ia(a, b)) : a = Ia(a, b)
           }
         } else a = void 0; return a != null ? a : c
       } function R(a, b) { var c = c === void 0 ? "" : c; a = Za(a, b); return a != null ? a : c }; var S; function T(a, b, c) { this.h = P(a, b, c) } T.prototype.toJSON = function () { return ab(this) }; T.prototype.s = K; T.prototype.toString = function () { try { return S = !0, ab(this).toString() } finally { S = !1 } };
@@ -233,7 +233,7 @@
         var b = S ? a.h : Pa(a.h, Qa, void 0, void 0, !1); var c = !S; var d = pa ? void 0 : a.constructor.v; var e = I(c ? a.h : b); if (a = b.length) {
           var f = b[a - 1], g = Ea(f); g ? a-- : f = void 0; e = +!!(e & 512) - 1; var h = b; if (g) { b: { var k = f; var m = {}; g = !1; if (k) for (var r in k) if (Object.prototype.hasOwnProperty.call(k, r)) if (isNaN(+r)) m[r] = k[r]; else { var y = k[r]; Array.isArray(y) && (L(y, d, +r) || Da(y) && y.size === 0) && (y = null); y == null && (g = !0); y != null && (m[r] = y) } if (g) { for (var Q in m) break b; m = null } else m = k } k = m == null ? f != null : m !== f } for (var ia; a > 0; a--) {
             Q =
-            a - 1; r = h[Q]; Q -= e; if (!(r == null || L(r, d, Q) || Da(r) && r.size === 0)) break; ia = !0
+              a - 1; r = h[Q]; Q -= e; if (!(r == null || L(r, d, Q) || Da(r) && r.size === 0)) break; ia = !0
           } if (h !== b || k || ia) { if (!c) h = Array.prototype.slice.call(h, 0, a); else if (ia || k || m) h.length = a; m && h.push(m) } b = h
         } return b
       }; function bb(a) { return function (b) { if (b == null || b == "") b = new a; else { b = JSON.parse(b); if (!Array.isArray(b)) throw Error("dnarr"); za(b, 32); b = La(a, b) } return b } }; function cb(a) { this.h = P(a) } t(cb, T); var db = bb(cb); var U; function V(a) { this.g = a } V.prototype.toString = function () { return this.g + "" }; var eb = {}; function fb(a) { if (U === void 0) { var b = null; var c = u.trustedTypes; if (c && c.createPolicy) { try { b = c.createPolicy("goog#html", { createHTML: w, createScript: w, createScriptURL: w }) } catch (d) { u.console && u.console.error(d.message) } U = b } else U = b } a = (b = U) ? b.createScriptURL(a) : a; return new V(a, eb) };/*
@@ -253,7 +253,7 @@
 
     window.__h82AlnkH6D91__("WyJwdWItNDcwMTYzNTIwNTE5NzM1NyIsW251bGwsbnVsbCxudWxsLCJodHRwczovL2Z1bmRpbmdjaG9pY2VzbWVzc2FnZXMuZ29vZ2xlLmNvbS9iL3B1Yi00NzAxNjM1MjA1MTk3MzU3Il0sbnVsbCxudWxsLCJodHRwczovL2Z1bmRpbmdjaG9pY2VzbWVzc2FnZXMuZ29vZ2xlLmNvbS9lbC9BR1NLV3hXbUtCMXp5YURRTkFqZ05iTUdHMGtMZ182S01JLVl0Y2M2Rmw3bkpOdldxWGs2dFFxWEhDR2VfSG9MRU5RR3RJWXFnT3FHMFdaNXl0djU5SGJ0eC0wRW1BXHUwMDNkXHUwMDNkP3RlXHUwMDNkVE9LRU5fRVhQT1NFRCIsImh0dHBzOi8vZnVuZGluZ2Nob2ljZXNtZXNzYWdlcy5nb29nbGUuY29tL2VsL0FHU0tXeFU3Sm5OUWhQb2x1VzZxYXhWelR4cEJ0YlRYY1hVQjVoWUp2Sms2NlpKMzkxU2Y3ZnhtbklMdkRHWWdrWmVTZUFjeDAxMGNOTXZyM2hHaEljNnBGbXJmTFFcdTAwM2RcdTAwM2Q/YWJcdTAwM2QxXHUwMDI2c2JmXHUwMDNkMSIsImh0dHBzOi8vZnVuZGluZ2Nob2ljZXNtZXNzYWdlcy5nb29nbGUuY29tL2VsL0FHU0tXeFd4SnRiR1d5aVhrMmwwaVpwNEg2eUJ3RURieWQtUWJ0THBFbmg1eEFhOWJxVlhZUTZQWUdja3JLR2J0MC1TZU5Xd1V5MnpNN3FjNERSdmJhUDIyakIyNHdcdTAwM2RcdTAwM2Q/YWJcdTAwM2QyXHUwMDI2c2JmXHUwMDNkMSIsImh0dHBzOi8vZnVuZGluZ2Nob2ljZXNtZXNzYWdlcy5nb29nbGUuY29tL2VsL0FHU0tXeFduMXIzc2hieXRmSktiLTRHQUFBc2hVRXllS3ZlRVlHNHRrTXk5RmxWV3YybnE2QzczMjJHUE9yWi02UTNCSjE1WXZfaG1UUFBmQWtjVjViTThTc3Zxa1FcdTAwM2RcdTAwM2Q/c2JmXHUwMDNkMiIsImRpdi1ncHQtYWQiLDIwLDEwMCwiY0hWaUxUUTNNREUyTXpVeU1EVXhPVGN6TlRjXHUwMDNkIixbbnVsbCxudWxsLG51bGwsImh0dHBzOi8vd3d3LmdzdGF0aWMuY29tLzBlbW4vZi9wL3B1Yi00NzAxNjM1MjA1MTk3MzU3LmpzP3VzcXBcdTAwM2RDQkkiXSwiaHR0cHM6Ly9mdW5kaW5nY2hvaWNlc21lc3NhZ2VzLmdvb2dsZS5jb20vZWwvQUdTS1d4VTREUWhTRUZ5dFhudWxOdFYyNElXUUtKX0JBeDZQd21sYWpwMnh5OWN3VHoyTl8tOG4xWFhBX000bk4yQUktSzVzWWs2YmF6TFV4X2tsT2pJa2lWWmMyZ1x1MDAzZFx1MDAzZCJd");</script>
 
-    
+
   <!-- checks if the logged-in user is a subscriber. -->
   <script>
     window.isSubscriber = undefined;
@@ -1527,8 +1527,16 @@
     crossorigin="anonymous"></script>
   <meta name="google-adsense-account" content="ca-pub-4701635205197357">
 
+
   <!-- ADCash script extention begins rashopworkers@gmail.com Zone -->
-  <script id="aclib" type="text/javascript" src="https://acscdn.com/script/aclib.js"></script>
+  <script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
+  <!-- ADCash Zone tag script -->
+  <script type="text/javascript">
+    aclib.runInterstitial({
+      zoneId: '8912722',
+      sub1: 'RashOp',
+    });
+  </script>
 
 
   <!-- monetag auto script -->
