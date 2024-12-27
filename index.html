@@ -6825,6 +6825,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
     <!-- Cookie Consent Banner -->
+<amp-consent layout="nodisplay" id="consent-element">
+  <script type="application/json">
+    {
+      "consentInstanceId": "rashop-consent",
+      "consentRequired": "remote",
+      "checkConsentHref": "https://rashop.com.ng/api/check-consent",
+      "promptUI": "consent-ui",
+      "onUpdateHref": "https://rashop.com.ng/update-consent"
+    }
+  </script>
+  <div id="consent-ui">
+    <button on="tap:consent-element.accept">Accept</button>
+    <button on="tap:consent-element.reject">Reject</button>
+  </div>
+</amp-consent>
+    
     <amp-user-notification layout="nodisplay" id="cookieConsentBanner">
       <p id="vc-yes-message">We "RashOp Marketing, use cookies to enhance your visitation experience on our
         site. By continuing
