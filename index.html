@@ -3,15 +3,15 @@
 
 <head>
   <meta charset="utf-8">
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-YY4SE7J9B5"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YY4SE7J9B5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-YY4SE7J9B5');
-</script>
+    gtag('config', 'G-YY4SE7J9B5');
+  </script>
   <!-- Google ADs Conversation Event -->
   <!-- Google tag (gtag.js) event -->
   <script>
@@ -21,15 +21,15 @@
   </script>
 
   <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-MMMR5RFF');</script>
-<!-- End Google Tag Manager -->
-  
-<!-- cdn.consentmanager.net -->
-  <script type="text/javascript" data-cmp-ab="1" src="https://cdn.consentmanager.net/delivery/autoblocking/72d9559022683.js" data-cmp-host="b.delivery.consentmanager.net" data-cmp-cdn="cdn.consentmanager.net" data-cmp-codesrc="0"></script>
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-MMMR5RFF');</script>
+  <!-- End Google Tag Manager -->
 
   <!-- Webmanifest -->
   <link rel="manifest" href="rashop.webmanifest">
@@ -58,6 +58,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <!-- Amp Content-Security-Policy -->
 
   <!-- Consentmanager, Amp-Analytics, Amp-Geo, Amp-Consent, Amp-User-Notification, Amp-Bind, Amp-Carousel, Amp-Ad, Amp-Lightbox, Amp Scripts -->
+  <script async custom-element="amp-consent" src="https://cdn.ampproject.org/v0/amp-consent-0.1.js"></script>
+  <meta name="amp-consent-blocking" content="amp-ad">
   <script async custom-element="amp-consent" src="https://cdn.ampproject.org/v0/amp-consent-0.1.js"></script>
   <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
   <script async custom-element="amp-geo" src="https://cdn.ampproject.org/v0/amp-geo-0.1.js"></script>
@@ -1544,10 +1546,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <!-- ADCash Zone tag script -->
   <script type="text/javascript">
     aclib.runInterstitial({
-        zoneId: '9227734',
-        sub1: 'RashOp',
+      zoneId: '9227734',
+      sub1: 'RashOp',
     });
-</script>
+  </script>
 
 
   <!-- monetag auto script -->
@@ -1557,30 +1559,48 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <!-- Meta-tag -->
   <meta name="facebook-domain-verification" content="uuhakjt539ojzackdz4szmzzqpo76u" />
   <!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '948415593917528');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=948415593917528&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
+  <script>
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+      n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '948415593917528');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=948415593917528&ev=PageView&noscript=1" /></noscript>
+  <!-- End Meta Pixel Code -->
 
 </head>
 
 <body>
+  <!-- ConsentManager Consent -->
+  <amp-consent id="ConsentManager" layout="nodisplay" type="ConsentManager">
+    <script type="application/json">
+      {
+        "postPromptUI": "postPromptUI",
+        "clientConfig": {
+          "cdid": "72d9559022683",
+          "params": ""
+        }
+      }
+    </script>
+    <div id="postPromptUI">
+      <button on="tap:ConsentManager.prompt()" role="button">Manage privacy settings</button>
+    </div>
+  </amp-consent>
+
   <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MMMR5RFF"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MMMR5RFF" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
   <!-- Google tag (gtag.js) -->
   <amp-analytics type="gtag" data-credentials="include">
     <script
@@ -6828,8 +6848,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
     <!-- Cookie Consent Banner -->
-<amp-consent layout="nodisplay" id="consent-element">
-  <script type="application/json">
+    <amp-consent layout="nodisplay" id="consent-element">
+      <script type="application/json">
     {
       "consentInstanceId": "rashop-consent",
       "consentRequired": "remote",
@@ -6838,12 +6858,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       "onUpdateHref": "https://rashop.com.ng/update-consent"
     }
   </script>
-  <div id="consent-ui">
-    <button on="tap:consent-element.accept">Accept</button>
-    <button on="tap:consent-element.reject">Reject</button>
-  </div>
-</amp-consent>
-    
+      <div id="consent-ui">
+        <button on="tap:consent-element.accept">Accept</button>
+        <button on="tap:consent-element.reject">Reject</button>
+      </div>
+    </amp-consent>
+
     <amp-user-notification layout="nodisplay" id="cookieConsentBanner">
       <p id="vc-yes-message">We "RashOp Marketing, use cookies to enhance your visitation experience on our
         site. By continuing
