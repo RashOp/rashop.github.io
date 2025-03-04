@@ -12,13 +12,6 @@
 
     gtag('config', 'G-YY4SE7J9B5');
   </script>
-  <!-- Google ADs Conversation Event -->
-  <!-- Google tag (gtag.js) event -->
-  <script>
-    gtag('event', 'conversion_event_page_view', {
-      // <event_parameters>
-    });
-  </script>
 
   <!-- Google Tag Manager -->
   <script>(function (w, d, s, l, i) {
@@ -28,8 +21,10 @@
       }); var f = d.getElementsByTagName(s)[0],
         j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
           'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-MMMR5RFF');</script>
+    })(window, document, 'script', 'dataLayer', 'GTM-TNPQVXF6');</script>
   <!-- End Google Tag Manager -->
+
+  <!-- cdn.consentmanager.net -->
 
   <!-- Webmanifest -->
   <link rel="manifest" href="rashop.webmanifest">
@@ -97,35 +92,50 @@
   S9VWqHB73Q+OyIVvIbKYcSc2w/aSuFKGSA==
   -----END CERTIFICATE-----">
 
-  <style>
+  <style amp-custom>
     html {
       background-color: rgb(255, 255, 255);
       color: black;
     }
 
     body {
-      width: initial;
+      table-layout: auto;
+      width: auto;
       height: 100vh;
       text-align: center;
       background-color: rgb(255, 255, 255);
-      background-image: url("rashop-marketing-brand-images/bgpool-red-borderV1.webp");
+      background: url("rashop-marketing-brand-images/bgpool-red-borderV1.webp");
       background-repeat: no-repeat;
-      background-size: contain;
-      justify-content: center;
-      align-items: center;
       padding: 0.1vmin;
       margin: 0.1vmin;
       border-radius: 11px;
-      z-index: auto;
+      display: -ms-grid;
+      display: -moz-grid;
+      display: grid;
+    }
+
+    header {
+      padding-left: 0.2em;
+      padding-right: 0.2em;
+      margin-bottom: 0.1%;
+      width: initial;
+      height: initial;
+      text-align: center;
     }
 
     .menu {
       padding-top: 5px;
-      padding-bottom: 2px;
-      margin-top: 2px;
-      margin-bottom: 5px;
+      padding-bottom: 0.5px;
+      margin-top: 1.5px;
+      margin-bottom: 0.1em;
       margin-left: 1px;
-      margin-right: 16px;
+      margin-right: 8px;
+      box-sizing: border-box;
+    }
+
+    .map-review-rate {
+      margin-top: 1.5px;
+
       box-sizing: border-box;
     }
 
@@ -137,23 +147,35 @@
       margin: 0.5%;
       position: static;
       display: -moz-grid;
+      display: -ms-grid;
       display: grid;
+    }
+
+    #iam-Name {
+      float: right;
+      padding: 2px;
+      margin: 2px;
+      width: initial;
+      height: initial;
+      font-family: Quicksand, Verdana;
+      font-size: 1.6em;
+      font-weight: 300;
+      display: flex;
     }
 
     .buttons {
       float: right;
-      padding-top: 2%;
-      padding-bottom: 2%;
-      margin-left: 1px;
-      margin-right: 1px;
+      padding: 2px;
+      margin: 2px;
       word-wrap: break-word;
       word-break: break-all;
       flex-wrap: wrap;
       width: initial;
+      height: initial;
     }
 
     .seeing {
-      margin-top: 0.5px;
+      margin-top: 0.7px;
       margin-bottom: 0.5px;
       margin-left: 0px;
       margin-right: 5px;
@@ -167,16 +189,16 @@
       width: auto;
       height: auto;
       float: right;
-      font-size: 13px;
-      font-family: "fadings", "Poppins", "Comfortaa", sans-serif;
-      font-weight: 300;
+      font-size: 16px;
+      font-family: Quicksand, Verdana;
+      font-weight: 400;
     }
 
     a.seeing:link {
       text-decoration: none;
-      font-size: 13px;
-      font-family: "fadings", "Poppins", "Comfortaa", sans-serif;
-      font-weight: 300;
+      font-size: 18px;
+      font-family: Quicksand, Verdana;
+      font-weight: 400;
       border-radius: 20px;
       margin-top: 0.5px;
       margin-bottom: 0.5px;
@@ -194,6 +216,8 @@
       margin-left: 2px;
       margin-right: 2px;
       color: rgb(0, 0, 0);
+      font-size: 16px;
+      font-family: Quicksand, Verdana;
       background-color: rgba(255, 255, 255, 0.233);
       border-radius: 20px;
     }
@@ -208,9 +232,9 @@
       width: auto;
       float: right;
       border-radius: 50px;
-      font-size: 16px;
-      font-family: "fadings", "Poppins", "Comfortaa", sans-serif;
-      font-weight: 300;
+      font-size: 18px;
+      font-family: Quicksand, Verdana;
+      font-weight: 400;
     }
 
     #show {
@@ -219,15 +243,42 @@
       background-size: contain;
       position: static;
       text-align: center;
-      font-size: 16px;
-      font-family: "fadings", "Poppins", "Comfortaa", sans-serif;
-      font-weight: 300;
+      font-optical-sizing: auto;
+      font-style: normal;
+      font-size: 18px;
+      font-family: Quicksand, Verdana;
+      font-weight: 400;
       word-spacing: initial;
-      width: initial;
+      width: 100;
       height: initial;
       padding-top: 0px;
       padding-bottom: 0px;
-      padding-left: 35px;
+      padding-left: 32px;
+      padding-right: 5px;
+      margin-top: 0px;
+      margin-bottom: 0%;
+      margin-left: 3px;
+      margin-right: 3px;
+      text-decoration: none;
+    }
+
+    #all-items {
+      background-image: url("rashop-marketing-brand-images/all.webp");
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: static;
+      text-align: center;
+      font-optical-sizing: auto;
+      font-style: normal;
+      font-size: 18px;
+      font-family: Quicksand, Verdana;
+      font-weight: 400;
+      word-spacing: initial;
+      width: 100;
+      height: initial;
+      padding-top: 0px;
+      padding-bottom: 0px;
+      padding-left: 22px;
       padding-right: 5px;
       margin-top: 0px;
       margin-bottom: 0%;
@@ -243,11 +294,13 @@
       position: static;
       color: whitesmoke;
       text-align: center;
-      font-size: 16px;
-      font-family: "fadings", "Poppins", "Comfortaa", sans-serif;
-      font-weight: 300;
+      font-optical-sizing: auto;
+      font-style: normal;
+      font-size: 18px;
+      font-family: Quicksand, Verdana;
+      font-weight: 400;
       word-spacing: initial;
-      width: initial;
+      width: 100;
       height: initial;
       padding-top: 0px;
       padding-bottom: 0px;
@@ -266,15 +319,17 @@
       background-size: contain;
       position: static;
       text-align: center;
-      font-size: 16px;
-      font-family: "fadings", "Poppins", "Comfortaa", sans-serif;
-      font-weight: 300;
+      font-optical-sizing: auto;
+      font-style: normal;
+      font-size: 18px;
+      font-family: Quicksand, Verdana;
+      font-weight: 400;
       word-spacing: initial;
-      width: initial;
+      width: 100;
       height: initial;
       padding-top: 0px;
       padding-bottom: 0px;
-      padding-left: 34px;
+      padding-left: 31px;
       padding-right: 5px;
       margin-top: 0px;
       margin-bottom: 0%;
@@ -939,6 +994,74 @@
       color: whitesmoke;
     }
   </style>
+  <style amp-boilerplate>
+    body {
+      -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+    }
+
+    @-webkit-keyframes -amp-start {
+      from {
+        visibility: hidden;
+      }
+
+      to {
+        visibility: visible;
+      }
+    }
+
+    @-moz-keyframes -amp-start {
+      from {
+        visibility: hidden;
+      }
+
+      to {
+        visibility: visible;
+      }
+    }
+
+    @-ms-keyframes -amp-start {
+      from {
+        visibility: hidden;
+      }
+
+      to {
+        visibility: visible;
+      }
+    }
+
+    @-o-keyframes -amp-start {
+      from {
+        visibility: hidden;
+      }
+
+      to {
+        visibility: visible;
+      }
+    }
+
+    @keyframes -amp-start {
+      from {
+        visibility: hidden;
+      }
+
+      to {
+        visibility: visible;
+      }
+    }
+  </style>
+  <noscript>
+    <style amp-boilerplate>
+      body {
+        -webkit-animation: none;
+        -moz-animation: none;
+        -ms-animation: none;
+        animation: none;
+      }
+    </style>
+  </noscript>
   <script>
     // Set cookie
     function setCookie(name, value, days) {
@@ -970,38 +1093,35 @@
 </head>
 
 <body>
+  <amp-auto-ads type="adsense" data-ad-client="ca-pub-4701635205197357">
+  </amp-auto-ads>
+  <!-- ConsentManager Consent -->
+
   <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MMMR5RFF" height="0" width="0"
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TNPQVXF6" height="0" width="0"
       style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
-  <!-- Google tag (gtag.js) -->
-  <amp-analytics type="gtag" data-credentials="include">
-    <script
-      type="application/json"> { "vars": { "gtag_id": "AW-16786514993", "config": { "AW-16786514993": { "groups": "default" } } }, "triggers": { } } </script>
-  </amp-analytics>
-
-  <!-- Google tag (gtag.js) --> <amp-analytics type="gtag" data-credentials="include">
-    <script
-      type="application/json"> { "vars": { "gtag_id": "AW-16786514993", "config": { "AW-16786514993": { "groups": "default" } } }, "triggers": { } } </script>
-  </amp-analytics>
   <!-- header -->
   <header>
     <div class="menu">
-      <a id="va-DL" title="Boon" href="https://ali.ski/6L6COh"><img id="Ads-M1" title=""
-          src="https://rashop.com.ng/rashop-marketing-brand-images/Ads-M2.png" alt="" width="35" height="35"></a>
-      <div class="logo"><img title="" src="https://rashop.com.ng/rashop-marketing-brand-images/rashls1-favicon.webp"
-          alt="" width="51" height="51">
+      <a id="va-DL" title="Boon" href="https://gftm.io/-97pP"><img id="Ads-M1" title=""
+          src="rashop-marketing-brand-images/Ads-M2.png" alt="" width="35" height="35"></a>
+      <div class="logo"><img title="" src="rashop-marketing-brand-images/rashls1-favicon.webp" alt="" width="51"
+          height="51">
       </div>
-      <div class="buttons" id="myButtons"><a class="seeing" id="marketer" href="https://gftm.io/boBU7x"
-          title="products">Marketing</a>
-        <b class="seeing" id="https://rashop.com.ng/about" href="#" title="rashop">About</b><a class="seeing" id="show"
-          href="https://rashop.com.ng/index" title="homepage">Show</a>
+      <div class="buttons" id="myButtons">
+        <a class="seeing" id="marketer" href="https://gftm.io/0eYlig" title="products">Marketing</a>
+        <a class="seeing" id="about" href="#" title="rashop">About</a>
+        <a class="seeing" id="all-items" href="https://rashop.com.ng/all" title="all-category">All</a>
+        <a class="seeing" id="show" href="https://rashop.com.ng/index" title="homepage">Show</a>
+      </div><br><br>
+      <div class="map-review-rate">
+        <a id="review-marketer-top-menu" title=""
+          href="https://www.google.com/maps/place/SniffTegist,+NO+9+Duba+Road,+Malali+800283,+Kaduna/@10.5549676,7.4721882,16z/data=!4m6!3m5!1s0x11b2b543f8aa8df3:0xb4592fbd8c410820!8m2!3d10.5560381!4d7.4719829!16s%2Fg%2F11mr2cj43_">
+          <Img id="rate-us-top-menu" title="rate" src="rashop-marketing-brand-images/stars.png" alt="" width="initial"
+            height="initial"></a>
       </div>
     </div>
-    <br><br><a id="review-marketer-top-menu"
-      href="https://www.google.com/search?q=rashop&oq=rasho&gs_lcrp=EgZjaHJvbWUqDggBEEUYJxg7GIAEGIoFMgYIABBFGDwyDggBEEUYJxg7GIAEGIoFMgYIAhBFGDwyBggDEEUYPDIGCAQQRRg8MgYIBRBFGDwyBggGEEUYPDIGCAcQRRg80gEINDA5NmowajeoAgiwAgE&sourceid=chrome&ie=UTF-8#"><Img
-        id="rate-us-top-menu" src="https://rashop.com.ng/rashop-marketing-brand-images/stars.png" alt="stars.png"
-        width="61" height="initial"></a><br>
   </header>
 
   <!-- Control buttons -->
