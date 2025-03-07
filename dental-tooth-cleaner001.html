@@ -667,23 +667,36 @@
       margin-right: 2px;
     }
 
-
-
     .first-marketing-impression {
-      text-align: center;
-      font-size: 22.1px;
-      font-family: Poppins, Quicksand, Verdana;
-      font-weight: 400;
-      font-feature-settings: "aalt";
-      color: whitesmoke;
+      /* Responsive font size */
       background-color: #0a0a0a;
-      padding-left: 3px;
-      padding-right: 3px;
-      margin-left: 0px;
-      margin-right: 0px;
       width: initial;
       height: initial;
-      font-kerning: auto;
+      text-align: center;
+      padding: 0.5%;
+      margin: 2px;
+      border-radius: 5px;
+    }
+
+    #get-cashback {
+      width: initial;
+      height: initial;
+      text-align: center;
+      align-self: center;
+      padding-top: 6%;
+      padding-bottom: 5%;
+      padding-left: 0.5%;
+      padding-right: 0.5%;
+      margin-top: 1px;
+      margin-bottom: 1px;
+      margin-left: 2px;
+      margin-right: 2px;
+      border-radius: 5px;
+      background-image: url("rashop-marketing-brand-images/how-to-get-cashback.webp");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: center;
+      background-color: #0a0a0a;
     }
 
     .iAm-brand-banner {
@@ -1583,6 +1596,34 @@
     </style>
   </noscript>
 
+  <script>
+    // Set cookie
+    function setCookie(name, value, days) {
+      var date = new Date();
+      date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+      var expires = "; expires=" + date.toGMTString();
+      document.cookie = name + "=" + value + expires + "; path=/";
+    }
+
+    // Get cookie
+    function getCookie(name) {
+      var nameEQ = name + "=";
+      var ca = document.cookie.split(';');
+      for (var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+      }
+      return null;
+    }
+
+    // Check if cookie is set
+    if (getCookie('myCookie') === null) {
+      // If not, set the cookie
+      setCookie('myCookie', 'myValue', 360); // The cookie expires in 360 days
+    }
+  </script>
+
   <!-- Admitad script extention -->
 
 
@@ -1592,17 +1633,6 @@
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4701635205197357"
     crossorigin="anonymous"></script>
   <meta name="google-adsense-account" content="ca-pub-4701635205197357">
-
-
-  <!-- ADCash script extention begins rashopworkers@gmail.com Zone -->
-  <script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
-  <!-- ADCash Zone tag script -->
-  <script type="text/javascript">
-    aclib.runInterstitial({
-      zoneId: '9227734',
-      sub1: 'RashOp',
-    });
-  </script>
 
 
   <!-- monetag auto script -->
@@ -1680,12 +1710,13 @@
 
   <!-- Control buttons -->
   <div id="myBtnmiddle">
-    <h2 id="koi" title="site affiliate name">Buying With Cashback</h2>
-    <h1 class="first-marketing-impression" title="Trending Professional Materials that
-      Explained
-      Fashion, Beauty And Eco-Friendly Lifestyle. And More">1- Click Buy.<br>2- Register With Google<br>3- Add The
-      Cashback Extention...</h1>
+    <h2 id="koi" title="site affiliate name">Purchase With Cashback</h2>
+    <section class="first-marketing-impression">
+      <section id="get-cashback">
+      </section>
+    </section>
 
+    <br>
     <amp-carousel id="custom-button" width="640" height="99.33" layout="responsive" type="slides" autoplay delay="5000"
       role="region" aria-label="Carousel with autoplay">
       <a class="roll-it" title="" href="https://s.click.aliexpress.com/e/_Dm82Uy3">

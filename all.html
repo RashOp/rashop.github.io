@@ -1553,6 +1553,34 @@
     </style>
   </noscript>
 
+  <script>
+    // Set cookie
+    function setCookie(name, value, days) {
+      var date = new Date();
+      date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+      var expires = "; expires=" + date.toGMTString();
+      document.cookie = name + "=" + value + expires + "; path=/";
+    }
+
+    // Get cookie
+    function getCookie(name) {
+      var nameEQ = name + "=";
+      var ca = document.cookie.split(';');
+      for (var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+      }
+      return null;
+    }
+
+    // Check if cookie is set
+    if (getCookie('myCookie') === null) {
+      // If not, set the cookie
+      setCookie('myCookie', 'myValue', 360); // The cookie expires in 360 days
+    }
+  </script>
+
   <!-- Admitad script extention -->
 
 
@@ -1562,17 +1590,6 @@
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4701635205197357"
     crossorigin="anonymous"></script>
   <meta name="google-adsense-account" content="ca-pub-4701635205197357">
-
-
-  <!-- ADCash script extention begins rashopworkers@gmail.com Zone -->
-  <script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
-  <!-- ADCash Zone tag script -->
-  <script type="text/javascript">
-    aclib.runInterstitial({
-      zoneId: '9227734',
-      sub1: 'RashOp',
-    });
-  </script>
 
 
   <!-- monetag auto script -->
