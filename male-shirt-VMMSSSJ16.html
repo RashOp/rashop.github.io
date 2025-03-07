@@ -309,15 +309,18 @@
       display: -ms-grid;
       display: -moz-grid;
       display: grid;
+      word-wrap: break-word;
     }
 
     header {
       padding-left: 0.2em;
       padding-right: 0.2em;
       margin-bottom: 0.1%;
-      width: initial;
-      height: initial;
+      width: auto;
+      height: auto;
       text-align: center;
+      box-sizing: content-box;
+      display: grid;
     }
 
     .menu {
@@ -386,14 +389,14 @@
       width: auto;
       height: auto;
       float: right;
-      font-size: 16px;
+      font-size: 14px;
       font-family: Quicksand, Verdana;
       font-weight: 400;
     }
 
     a.seeing:link {
       text-decoration: none;
-      font-size: 18px;
+      font-size: 16px;
       font-family: Quicksand, Verdana;
       font-weight: 400;
       border-radius: 20px;
@@ -429,7 +432,7 @@
       width: auto;
       float: right;
       border-radius: 50px;
-      font-size: 18px;
+      font-size: 16px;
       font-family: Quicksand, Verdana;
       font-weight: 400;
     }
@@ -443,15 +446,15 @@
       text-align: center;
       font-optical-sizing: auto;
       font-style: normal;
-      font-size: 18px;
+      font-size: 16px;
       font-family: Quicksand, Verdana;
       font-weight: 400;
       word-spacing: initial;
       width: 100;
-      height: initial;
+      height: auto;
       padding-top: 0px;
       padding-bottom: 0px;
-      padding-left: 32px;
+      padding-left: 29px;
       padding-right: 5px;
       margin-top: 0px;
       margin-bottom: 0%;
@@ -468,7 +471,7 @@
       text-align: center;
       font-optical-sizing: auto;
       font-style: normal;
-      font-size: 18px;
+      font-size: 16px;
       font-family: Quicksand, Verdana;
       font-weight: 400;
       word-spacing: initial;
@@ -476,7 +479,7 @@
       height: initial;
       padding-top: 0px;
       padding-bottom: 0px;
-      padding-left: 22px;
+      padding-left: 19px;
       padding-right: 5px;
       margin-top: 0px;
       margin-bottom: 0%;
@@ -493,7 +496,7 @@
       text-align: center;
       font-optical-sizing: auto;
       font-style: normal;
-      font-size: 18px;
+      font-size: 16px;
       font-family: Quicksand, Verdana;
       font-weight: 400;
       word-spacing: initial;
@@ -501,7 +504,7 @@
       height: initial;
       padding-top: 0px;
       padding-bottom: 0px;
-      padding-left: 20px;
+      padding-left: 16px;
       padding-right: 5px;
       margin-top: 0px;
       margin-bottom: 0%;
@@ -518,7 +521,7 @@
       text-align: center;
       font-optical-sizing: auto;
       font-style: normal;
-      font-size: 18px;
+      font-size: 16px;
       font-family: Quicksand, Verdana;
       font-weight: 400;
       word-spacing: initial;
@@ -526,7 +529,7 @@
       height: initial;
       padding-top: 0px;
       padding-bottom: 0px;
-      padding-left: 31px;
+      padding-left: 26px;
       padding-right: 5px;
       margin-top: 0px;
       margin-bottom: 0%;
@@ -855,7 +858,7 @@
       background-position: center;
       /* Responsive font size */
       color: black;
-      width: auto;
+      max-width: 304px;
       height: auto;
       text-align: center;
       padding: 0.5;
@@ -871,6 +874,7 @@
       align-items: center;
       flex-shrink: initial;
       justify-content: space-between;
+      word-wrap: break-word;
     }
 
     .aliexpress-admitad-rashop-iAM-clothes {
@@ -929,7 +933,7 @@
 
     .wes {
       text-align: center;
-      font-size: 18px;
+      font-size: 16px;
       font-family: Quicksand, Verdana;
       font-weight: 400;
       color: rgb(255, 251, 0);
@@ -947,7 +951,7 @@
 
     .rashop-description {
       text-align: center;
-      font-size: 12px;
+      font-size: 18px;
       font-family: Quicksand, Verdana;
       font-weight: 400;
       color: rgba(245, 245, 245, 0.972);
@@ -987,6 +991,14 @@
 
     .clothe-item-image {
       border-radius: 1%;
+      text-align: center;
+      justify-self: center;
+    }
+
+    .marketing-videos {
+      border-radius: 1%;
+      text-align: center;
+      justify-self: center;
     }
 
     .standard-boon {
@@ -1046,6 +1058,30 @@
       background-color: rgba(255, 255, 255, 0.168);
     }
 
+    .details {
+      list-style-type: none;
+      lighting-color: whitesmoke;
+      /* Responsive font size */
+      color: #030100;
+      background-color: rgb(255, 255, 255);
+      width: auto;
+      height: auto;
+      text-align: left;
+      font-size: 14px;
+      font-family: Quicksand, Verdana;
+      font-weight: 800;
+      padding: 10px;
+      margin: 5px;
+      border-radius: 1%;
+      display: grid;
+      /* Hidden by default */
+      align-content: center;
+      align-self: center;
+      align-items: center;
+      flex-shrink: initial;
+      justify-content: space-between;
+    }
+
     .now-buying-bodycnowview {
       text-align: center;
       align-items: center;
@@ -1098,7 +1134,7 @@
 
     .names {
       text-align: center;
-      font-size: 14px;
+      font-size: 21px;
       font-family: Quicksand, Verdana;
       font-weight: 400;
       font: italic;
@@ -1622,7 +1658,7 @@
         <a class="seeing" id="marketer" href="https://gftm.io/0eYlig" title="products">Marketing</a>
         <a class="seeing" id="about" href="https://rashop.com.ng/about" title="rashop">About</a>
         <a class="seeing" id="all-items" href="https://rashop.com.ng/all" title="all-category">All</a>
-        <a class="seeing" id="show" href="#" title="homepage">Show</a>
+        <a class="seeing" id="show" href="https://rashop.com.ng/index" title="homepage">Show</a>
       </div><br><br>
       <div class="map-review-rate">
         <a id="review-marketer-top-menu" title=""
@@ -1633,17 +1669,23 @@
     </div>
   </header>
 
+  <script>document.addEventListener('DOMContentLoaded', function () {
+      const header = document.querySelector('.main-header');
+      if (header) {
+        console.log('Header loaded');
+      }
+    });</script>
+
+
 
   <!-- Control buttons -->
   <div id="myBtnmiddle">
-    <h2 id="koi" title="site affiliate name">Marketing</h2>
+    <h2 id="koi" title="site affiliate name">Buying With Cashback</h2>
     <h1 class="first-marketing-impression" title="Trending Professional Materials that
       Explained
-      Fashion, Beauty And Eco-Friendly Lifestyle. And More">Trending Professional Materials that
-      Explained
-      Fashion, Beauty And Eco-Friendly Lifestyle. And More...</h1>
+      Fashion, Beauty And Eco-Friendly Lifestyle. And More">1- Click Buy.<br>2- Register With Google<br>3- Add The
+      Cashback Extention...</h1>
 
-    <br>
     <amp-carousel id="custom-button" width="640" height="99.33" layout="responsive" type="slides" autoplay delay="5000"
       role="region" aria-label="Carousel with autoplay">
       <a class="roll-it" title="" href="https://s.click.aliexpress.com/e/_Dm82Uy3">
@@ -1709,18 +1751,17 @@
     </amp-carousel>
 
     <div class="aliexpress-admitad-rashop-iAM-clothes">
-      <b class="wes" title="Classic">NEW AND TOP QUALITY</b>
+      <b class="wes" title="Classic">NEW AND THE BEST QUALITY</b>
     </div>
     <!-- The filterable elements. Note that some have multiple class names (this is because they belong to multiple categories) -->
     <div class="middle">
       <ul id="global_V">
-        <!-- Men Pants -->
         <!-- 1 -->
-        <li class="noSmartLink aliexpress-pant">
-          <b class="names" title="men-pant-VMP1">Male Shirt<br>VMMSSSJ16</b>
+        <li class="noSmartLink">
+          <b class="names" title="men-shirt-VMMSSSJ16">Men Shirt</b>
           <h1 class="rashop-description" title="identified-shops">From Identified-Shops</h1>
 
-          <img class="clothe-item-image" title="VMP1-male-pant"
+          <img class="clothe-item-image" title="male-sss-VMMSSSJ16"
             src="rashop-marketing-contents-images/men-women-king-queen-celebrity-wedding-ocassion/male-boss-suit-dress-shirt-cloth/male-sss-VMMSSSJ16.webp"
             alt="" width="295" height="295"></amp-img><br>
           <section class="iam-rpm-click">
@@ -1728,18 +1769,19 @@
               <img src="rashop-marketing-brand-images/pcardce5-lpage-s.webp" width="71" height="31"></amp-img>
             </a>
           </section>
+          <b class="details">Casual Short Sleeve T Shirt Men'S For 2024 Summer Tshirt, Top Tees Striped Brand Fashion
+            HIP HOP Clothes OverSize 3XL T-Shirt</b>
         </li><br>
+
       </ul>
-      <h1 class="details">Casual Short Sleeve T Shirt Men'S For 2024 Summer Tshirt,<br>Top Tees Striped Brand Fashion
-        HIP HOP Clothes OverSize 3XL T-Shirt<br></h1>
     </div>
 
     <div class="middle">
       <ul id="global_V">
         <!-- Men Pants -->
         <!-- 2 -->
-        <li class="noSmartLink aliexpress-pant">
-          <b class="names" title="men-pant-VMP2">Men Pant<br>VMP2</b>
+        <li class="noSmartLink">
+          <b class="names" title="men-pant-VMP2">Men Pant</b>
           <h1 class="rashop-description" title="identified-shops">From Identified-Shops</h1>
 
           <img class="clothe-item-image" title="VMP2-male-pant"
@@ -1752,10 +1794,9 @@
           </section>
         </li>
         <!-- 3 -->
-        <li class="noSmartLink aliexpress-panties">
-          <b class="names" title="ladies-pant-VFP12">Ladies
-            Pant<br>VFP12</b>
-          <h1 class="rashop-description" title="identified-shops">Identified-Shops</h1>
+        <li class="noSmartLink">
+          <b class="names" title="ladies-pant-VFP12">Ladies Pant</b>
+          <h1 class="rashop-description" title="identified-shops">From Identified-Shops</h1>
 
           <img class="clothe-item-image" title="VFP12-female-pant"
             src="rashop-marketing-contents-images/bathroom-towels-sleeping-exotic-transparent-underwear-inner-singlets-vests-pants/women-underwear-pants/VFP12-female-pant.webp"
@@ -1767,21 +1808,21 @@
           </section>
         </li>
         <!-- 4 -->
-        <li class="noSmartLink clothes">
-          <b class="names" title="female-shirt-VMFSSSJ22">Female Shirt<br>VMFSSSJ22</b>
+        <li class="noSmartLink">
+          <b class="names" title="ladies-abaya-VMFSSSJ22">Ladies Abaya</b>
           <h1 class="rashop-description" title="identified-shops">From Identified-Shops</h1>
 
           <img class="clothe-item-image" title="female-sss-VMFSSSJ22"
             src="rashop-marketing-contents-images/men-women-king-queen-celebrity-wedding-ocassion/female-ladies-suit-dress-shirt-cloth/female-sss-VMFSSSJ22.webp"
             alt="" width="295" height="295"></amp-img><br>
           <section class="iam-rpm-click">
-            <a class="now-buying-clobnowview" href="https://gftm.io/UzZMHq" title="https://gftm.io/UzZMHq">
+            <a class="now-buying-clobnowview" href="https://gftm.io/xCBxPP" title="https://gftm.io/xCBxPP">
               <img src="rashop-marketing-brand-images/pcardce5-lpage-s.webp" width="71" height="31"></amp-img>
             </a>
           </section>
         </li>
         <!-- 5 -->
-        <li class="noSmartLink clothes"><b class="names" title="men-trouser-VMMT2">Men Trouser<br>VMMT2</b>
+        <li class="noSmartLink"><b class="names" title="men-trouser-VMMT2">Men Trouser</b>
           <h1 class="rashop-description" title="identified-shops">From Identified-Shops</h1>
 
           <img class="clothe-item-image" title="VMMale-TrauserVMMT2-men-tactical-cargo-pant"
@@ -1794,7 +1835,7 @@
           </section>
         </li>
         <!-- 6 -->
-        <li class="noSmartLink clothes"><b class="names" title="ladie-trouser-vmft2">Ladies Trouser<br>VMFT2</b>
+        <li class="noSmartLink"><b class="names" title="ladie-trouser-vmft2">Ladies Trouser</b>
           <h1 class="rashop-description" title="identified-shops">From Identified-Shops</h1>
 
           <img class="clothe-item-image" title="trouserVMFT2"
@@ -1807,8 +1848,8 @@
           </section>
         </li>
         <!-- 7 -->
-        <li class="noSmartLink shoe">
-          <b class="names" title="male-shoe-VMMShoe12">Male Shoe<br>VMMShoe12</b>
+        <li class="noSmartLink">
+          <b class="names" title="male-shoe-VMMShoe12">Male Shoes</b>
           <h1 class="rashop-description" title="identified-shops">From Identified-Shops</h1>
 
           <img class="clothe-item-image" title="VMMShoe12"
@@ -1821,26 +1862,26 @@
           </section>
         </li>
         <!-- 8 -->
-        <li class="noSmartLink shoe">
-          <b class="names" title="female-shoe-VMFShoe1">Female Shoe<br>VMFShoe1</b>
+        <li class="noSmartLink">
+          <b class="names" title="female-shoe-VMFShoe1">Female Shoes</b>
           <h1 class="rashop-description" title="identified-shops">From Identified-Shops</h1>
 
           <img class="clothe-item-image" title="VMfemale-VMFShoe1"
             src="rashop-marketing-contents-images/top-10-quality-men-male-women-female-wedding-bathroom-shoes/female-ladies-qeen-shoes/VMfemale-VMFShoe1.webp"
             alt="" width="295" height="295"></amp-img><br>
           <section class="iam-rpm-click">
-            <a class="now-buying-clobnowview" href="https://gftm.io/rgsLD" title="https://gftm.io/rgsLD">
+            <a class="now-buying-clobnowview" href="https://gftm.io/UbitQ7" title="https://gftm.io/UbitQ7">
               <img src="rashop-marketing-brand-images/pcardce5-lpage-s.webp" width="71" height="31"></amp-img>
             </a>
           </section>
         </li>
         <!-- 9 -->
-        <li class="noSmartLink clothes"><b class="names" title="men-and-women-smart-glass001">Men And Women<br>Smart
+        <li class="noSmartLink"><b class="names" title="men-and-women-smart-glass001">All Gender Smart
             Glass</b>
           <h1 class="rashop-description" title="identified-shops">From Identified-Shops</h1>
 
           <section class="iam-rpm-click">
-            <a class="now-buying-clobnowview" href="https://gftm.io/T28Ie" title="https://gftm.io/T28Ie">
+            <a class="now-buying-clobnowview" href="https://gftm.io/87BRln" title="https://gftm.io/87BRln">
               <img src="rashop-marketing-brand-images/pcardce5-lpage-s.webp" width="71" height="31"></amp-img>
             </a>
           </section>
@@ -1859,21 +1900,21 @@
             </amp-video><br>
         </li>
         <!-- 10 -->
-        <li class="noSmartLink clothes"><b class="names" title="tooth-cLeaner001">Tooth Cleaner<br>cleaner001</b>
+        <li class="noSmartLink"><b class="names" title="tooth-cLeaner001">Tooth Cleaner</b>
           <h1 class="rashop-description" title="identified-shops">From Identified-Shops</h1>
 
           <section class="iam-rpm-click">
-            <a class="now-buying-clobnowview" href="https://gftm.io/T28Ie" title="https://gftm.io/T28Ie">
+            <a class="now-buying-clobnowview" href="https://gftm.io/XAELY" title="https://gftm.io/XAELY">
               <img src="rashop-marketing-brand-images/pcardce5-lpage-s.webp" width="71" height="31"></amp-img>
             </a>
           </section>
 
           <!-- Ref: https://amp.dev/documentation/components/amp-video/ -->
           <video class="marketing-videos" controls layout="responsive"
-            poster="rashop-marketing-contents-images/natural-sickness-fracture-lumber-leg-pain-remedy/videos/dental-tooth-cleaner001.PNG"
+            poster="rashop-marketing-contents-images/natural-sickness-fracture-lumber-leg-pain-remedy/ems tools/videos/dental-tooth-cleaner001.PNG"
             height="200" width="295">
             <source class="clothe-item-image" title="dental-tooth-cleaner001"
-              src="rashop-marketing-contents-images/natural-sickness-fracture-lumber-leg-pain-remedy/videos/dental-tooth-cleaner001.mp4"
+              src="rashop-marketing-contents-images/natural-sickness-fracture-lumber-leg-pain-remedy/ems tools/videos/dental-tooth-cleaner001.mp4"
               type="video/webm" />
             <source src="" type="video/mp4" />
             <div fallback>
@@ -1882,7 +1923,7 @@
             </amp-video><br>
         </li>
         <!-- 11 -->
-        <li class="noSmartLink clothes"><b class="names" title="colmi-r12-smart-ring001">COLMI R12<br>Smart Ring001</b>
+        <li class="noSmartLink"><b class="names" title="colmi-r12-smart-ring001">COLMI R12 Smart Ring</b>
           <h1 class="rashop-description" title="identified-shops">From Identified-Shops</h1>
 
           <section class="iam-rpm-click">
