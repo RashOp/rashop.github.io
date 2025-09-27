@@ -1637,14 +1637,11 @@
   <!-- AMP async custom elements and auto ads script -->
 
   <!-- Adsense -->
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4701635205197357"
-    crossorigin="anonymous"></script>
-  <meta name="google-adsense-account" content="ca-pub-4701635205197357">
-
+  <script async custom-element="amp-auto-ads"
+        src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+</script>
   <!-- Takeads -->
-  <meta name="takeads-platform-verification" content="96b01d40-52d0-4a33-b8ae-39f93cb2e226">
   <!-- Adcash -->
-  <script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
 
   <!-- monetag auto script -->
 
@@ -1679,6 +1676,9 @@
 </head>
 
 <body>
+  <amp-auto-ads type="adsense"
+        data-ad-client="ca-pub-4701635205197357">
+</amp-auto-ads>
   
   <!-- ConsentManager Consent -->
 
